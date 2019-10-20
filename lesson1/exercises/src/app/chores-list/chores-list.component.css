@@ -1,0 +1,11 @@
+.chores {
+  color: green;
+  font-family: cursive;
+  font-size: 2em;
+}
+.chores li {
+  font-style: italic;
+}
+.chores h3 {
+  text-decoration: underline;
+}

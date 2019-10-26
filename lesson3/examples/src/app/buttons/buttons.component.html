@@ -1,7 +1,8 @@
 <div class="buttons">
-   <h3>{{buttonHeading}}</h3>
-   <button class="gold">Gold</button> <br>
-   <button class="silver">Silver</button> <br>
-   <button class="copper">Copper</button> <hr>
-   <button>Activate/Deactivate Buttons</button>
+  <h3>{{ buttonHeading }}</h3>
+  <button [class.gold]="!gInactive" [disabled]="gInactive" (click)="gInactive = true">Gold</button> <br />
+  <button [class.silver]="!sInactive" [disabled]="sInactive" (click)="sInactive = true">Silver</button> <br />
+  <button [class.copper]="!cInactive" [disabled]="cInactive" (click)="cInactive = true">Copper</button>
+  <hr />
+  <button (click)="activate()">Reactivate Buttons</button>
 </div>

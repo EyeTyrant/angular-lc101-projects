@@ -11,6 +11,7 @@ h3 {
   color: black;
   text-align: center;
   list-style-type: upper-roman;
+  list-style-position: inside;
 }
 .p-style {
   color: blue;
